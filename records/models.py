@@ -12,3 +12,6 @@ class RecordModel(models.Model):
         blank=False,
         null=False,
     )
+    create_date_time = models.DateTimeField(
+        auto_now_add=True,
+    )
