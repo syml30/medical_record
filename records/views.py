@@ -16,6 +16,10 @@ class RetrieveRecordModel(RetrieveAPIView):
     queryset = RecordModel.objects.all()
 
 
-class CreateRecordModel(CreateAPIView):
+class ListRecordModel(ListAPIView):
     serializer_class = RecordModelSerializer
     queryset = RecordModel.objects.all()
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filterset_fields = ['user', ]
+    search_fields = ['^user', ]
+    ordering_fields = ['user', ]
