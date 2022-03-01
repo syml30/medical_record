@@ -30,3 +30,4 @@ description:
 - add searching, filtering and ordering to RecordListAPIView
 - change urls name
 - restructure source code and files
+- update postman collection
