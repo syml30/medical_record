@@ -17,4 +17,4 @@ class RecordModel(models.Model):
     )
 
     def __str__(self):
-        return f"{self.user}-{self.data}"
+        return f'{self.user}-{self.data}'

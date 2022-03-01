@@ -1,16 +1,18 @@
+from django_filters.rest_framework import DjangoFilterBackend
+
 from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView
+from rest_framework.filters import SearchFilter, OrderingFilter
 
 from records.models import RecordModel
 from records.serializers import RecordModelSerializer
 
 
-class ListRecordModel(ListAPIView):
+class CreateRecordModel(CreateAPIView):
     serializer_class = RecordModelSerializer
     queryset = RecordModel.objects.all()
 
 
 class RetrieveRecordModel(RetrieveAPIView):
-
     lookup_field = 'pk'
     serializer_class = RecordModelSerializer
     queryset = RecordModel.objects.all()
