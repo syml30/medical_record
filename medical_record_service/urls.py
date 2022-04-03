@@ -11,7 +11,7 @@ schema_view = get_schema_view(
         title="Medical Record Service API",
         default_version='v0.01',
         description="This service is used to medical record",
-        contact=openapi.Contact(email="zidevgroup@gmail.com"),
+        contact=openapi.Contact(email=""),
         license=openapi.License(name="BSD License"),
     ),
     public=True,

@@ -146,7 +146,7 @@ logging.basicConfig(
     level=logging.DEBUG,
     # filename='.log',
     filemode='w',
-    format='zi_doctor_log: %(levelname)s - %(asctime)s - module: %(module)s - line number: %(lineno)d  - message: '
+    format='log: %(levelname)s - %(asctime)s - module: %(module)s - line number: %(lineno)d  - message: '
            '\"%(message)s\" '
 )
 

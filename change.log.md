@@ -4,8 +4,6 @@
 
 ### log 001
 
-date: 1400-12-03
-
 developed by: yasaman
 
 title: init
@@ -19,9 +17,6 @@ description:
 
 ### log 002
 
-date: 1400-12-0
-
-developed by: nvd
 
 title: 
 
